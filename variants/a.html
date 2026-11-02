@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>案A ナチュラル｜松岡整骨院</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Josefin+Sans:wght@300;400&display=swap">
+<style>
+:root{--bg:#FFFFFF;--soft:#F6F7F3;--line:#DCE5DD;--ink:#3E4A42;--muted:#7C877F;--green:#4E8B6A;--green-l:#E8F1EB;--orange:#E9894A;--orange-l:#FCEEE4;--lineg:#06C755;
+--jp:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;--en:"Josefin Sans","Helvetica Neue",sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--jp);font-size:15px;line-height:2;letter-spacing:.06em}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0;font-weight:500;line-height:1.6;text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:24px}
+.preview-bar{background:#3E4A42;color:#fff;text-align:center;font-size:12px;padding:6px 16px;line-height:1.5}
+/* header */
+header{display:flex;align-items:center;gap:32px;padding:22px 40px}
+header .logo img{height:38px;width:auto;border-radius:6px}
+header nav{margin-left:auto;display:flex;gap:28px;font-size:13px;font-weight:500}
+header nav a:hover{color:var(--green)}
+header .tel{font-family:var(--en);font-size:20px;letter-spacing:.08em;color:var(--green);white-space:nowrap}
+/* hero */
+.hero{position:relative;margin-left:40px;margin-right:0}
+.hero .ph{border-radius:200px 0 0 0;overflow:hidden;height:min(68vh,620px)}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:60% 35%}
+.hero .copy{position:absolute;left:-40px;bottom:-48px;background:var(--bg);padding:40px 56px 28px 40px;border-radius:0 48px 0 0;display:grid;gap:14px}
+.hero h1{font-size:clamp(26px,3.4vw,40px);letter-spacing:.14em;font-weight:500}
+.hero h1 b{color:var(--green);font-weight:700}
+.hero .sub{color:var(--muted);font-size:14px}
+.dots{display:flex;gap:6px}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--green)}
+.dots i:nth-child(2){background:var(--orange)}
+/* side buttons */
+.side{position:fixed;right:0;top:40%;z-index:40;display:grid;gap:8px}
+.side a{writing-mode:vertical-rl;background:#fff;border:1px solid var(--line);border-right:0;border-radius:10px 0 0 10px;padding:16px 10px;font-size:13px;font-weight:700;letter-spacing:.2em;display:flex;align-items:center;gap:8px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.side a svg{width:22px;height:22px}
+.side .l{color:var(--lineg)} .side .w{color:var(--orange)}
+/* section heading */
+.sec{padding-block:120px 40px}
+.ttl{text-align:center;display:grid;gap:4px;margin-bottom:56px}
+.ttl h2{font-size:24px;letter-spacing:.4em}
+.ttl span{font-family:var(--en);font-size:12px;letter-spacing:.3em;color:var(--orange);text-transform:uppercase}
+/* points */
+.points{display:flex;justify-content:center;flex-wrap:wrap;gap:16px}
+.points li{width:150px;height:150px;border-radius:50%;background:var(--soft);display:grid;place-content:center;text-align:center;font-size:13px;line-height:1.6}
+.points b{display:block;font-family:var(--en);font-size:30px;color:var(--green);font-weight:400;letter-spacing:.04em}
+.points b small{font-family:var(--jp);font-size:13px}
+/* greeting */
+.greet{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:center}
+.greet p+p{margin-top:18px}
+.greet .name{margin-top:24px;font-size:14px}
+.greet .name b{font-size:20px;letter-spacing:.2em;margin-left:8px}
+.greet img{border-radius:0 120px 0 0;aspect-ratio:4/5;object-fit:cover}
+.more{display:inline-flex;align-items:center;gap:16px;margin-top:32px;font-size:15px;letter-spacing:.2em}
+.more::before{content:"";width:90px;height:1px;background:var(--ink)}
+.more::after{content:"";width:12px;height:12px;border-top:1px solid var(--ink);border-right:1px solid var(--ink);transform:rotate(45deg);margin-left:-26px}
+/* nayami */
+.nayami{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.nayami a{background:#fff;padding:28px 12px;text-align:center;display:grid;gap:8px;justify-items:center;font-weight:500;transition:background .2s}
+.nayami a:hover{background:var(--green-l)}
+.nayami svg{width:40px;height:40px;color:var(--green)}
+.nayami span{font-family:var(--en);font-size:10px;letter-spacing:.2em;color:var(--muted)}
+/* features */
+.feat{display:grid;gap:96px}
+.f{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.f:nth-child(even) .fi{order:2}
+.fi img{border-radius:120px 0 0 0;aspect-ratio:4/3;object-fit:cover}
+.f:nth-child(even) .fi img{border-radius:0 120px 0 0}
+.ft{border-left:1px solid var(--green);padding-left:32px;display:grid;gap:14px}
+.ft .no{font-family:var(--en);color:var(--orange);letter-spacing:.2em;font-size:13px}
+.ft h3{font-size:22px;letter-spacing:.12em}
+.ft p{color:var(--muted)}
+/* jiko */
+.jiko{background:var(--soft);border-radius:0 160px 0 0;padding:72px 64px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.jiko h2{font-size:26px;letter-spacing:.14em}
+.jiko ul{display:grid;gap:10px;margin-top:20px}
+.jiko li{display:flex;align-items:center;gap:12px}
+.jiko li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.jiko .big{font-family:var(--en);font-size:64px;color:var(--orange);line-height:1}
+.jiko .big small{font-family:var(--jp);font-size:20px;margin-left:4px}
+.jiko img{border-radius:24px;aspect-ratio:4/3;object-fit:cover}
+/* voices */
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.v{display:grid;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
+.v .tag{font-size:12px;color:var(--green);letter-spacing:.2em}
+.v h3{font-size:17px}
+.v p{font-size:14px;color:var(--muted)}
+.note{font-size:12px;color:var(--muted);margin-top:24px}
+/* flow+price */
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:0;counter-reset:f}
+.flow li{counter-increment:f;text-align:center;padding:0 8px;position:relative;display:grid;gap:6px;justify-items:center;font-weight:500}
+.flow li::before{content:"0" counter(f);font-family:var(--en);font-size:30px;color:var(--green);font-weight:300}
+.flow li:not(:last-child)::after{content:"";position:absolute;right:-6px;top:22px;width:12px;height:1px;background:var(--muted)}
+.flow small{font-size:12px;color:var(--muted);font-weight:400;line-height:1.7}
+.price{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:96px}
+.price h3{font-size:18px;letter-spacing:.2em;padding-bottom:12px;border-bottom:1px solid var(--green);margin-bottom:12px}
+.price dl{margin:0;display:grid;grid-template-columns:1fr auto;row-gap:10px}
+.price dd{margin:0;font-family:var(--en);font-size:17px}
+.price dd small{font-family:var(--jp);font-size:12px}
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.tiles a{display:grid;gap:14px;text-align:center;letter-spacing:.2em}
+.tiles img{aspect-ratio:4/3;object-fit:cover}
+/* footer */
+footer{text-align:center;padding:96px 24px 120px;display:grid;gap:16px;justify-items:center}
+footer .tel{font-family:var(--en);font-size:30px;color:var(--green);letter-spacing:.1em}
+table{border-collapse:collapse;font-size:13px;margin-top:8px}
+th,td{border:1px solid var(--line);padding:8px 14px;text-align:center}
+.o{color:var(--green)}.h{color:var(--orange)}.x{color:#C2CBC4}
+.cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:14px 32px;font-weight:700;color:#fff;letter-spacing:.12em}
+.btn svg{width:20px;height:20px}
+.btn.l{background:var(--lineg)}.btn.t{background:var(--orange)}.btn.w{background:#fff;color:var(--green);border:1px solid var(--green)}
+.sp-bar{display:none}
+@media (max-width:900px){
+  header{padding:14px 20px}
+  header nav,header .tel{display:none}
+  .hero{margin-left:16px}
+  .hero .ph{height:min(56vh,460px);border-radius:100px 0 0 0}
+  .hero .copy{position:relative;left:-16px;bottom:auto;margin-top:-40px;padding:28px 24px 0 16px;border-radius:0 32px 0 0}
+  .side{display:none}
+  .sec{padding-block:80px 24px}
+  .greet,.f,.jiko,.price{grid-template-columns:1fr;gap:32px}
+  .f:nth-child(even) .fi{order:0}
+  .feat{gap:64px}
+  .jiko{padding:48px 24px;border-radius:0 80px 0 0}
+  .nayami{grid-template-columns:repeat(2,1fr)}
+  .voices{grid-template-columns:1fr;gap:24px}
+  .flow{grid-template-columns:repeat(3,1fr);row-gap:28px}
+  .flow li:nth-child(3)::after{display:none}
+  .tiles{grid-template-columns:1fr 1fr}
+  .points li{width:130px;height:130px}
+  .sp-bar{display:grid;grid-template-columns:1.2fr 1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));gap:6px}
+  .sp-bar a{display:grid;justify-items:center;padding:6px 2px;border-radius:10px;color:#fff;font-weight:700;font-size:12px}
+  .sp-bar svg{width:22px;height:22px}
+  .sp-bar .l{background:var(--lineg)}.sp-bar .t{background:var(--orange)}.sp-bar .w{background:var(--green)}
+}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-line" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s6-3.5 8.2-6.1C21.6 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8zM8.2 13.6H6.3a.5.5 0 0 1-.5-.5V9.2a.5.5 0 0 1 1 0v3.4h1.4a.5.5 0 0 1 0 1zm1.9-.5a.5.5 0 0 1-1 0V9.2a.5.5 0 0 1 1 0zm4.6 0a.5.5 0 0 1-.9.3l-2-2.7v2.4a.5.5 0 0 1-1 0V9.2a.5.5 0 0 1 .9-.3l2 2.7V9.2a.5.5 0 0 1 1 0zm3.1-2.4a.5.5 0 0 1 0 1h-1.4v.9h1.4a.5.5 0 0 1 0 1h-1.9a.5.5 0 0 1-.5-.5V9.2a.5.5 0 0 1 .5-.5h1.9a.5.5 0 0 1 0 1h-1.4v.9z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M7.5 14h2M11 14h2M14.5 14h2M7.5 17.5h2M11 17.5h2"/></symbol>
+  <symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9M12 12C12 8 9 6 5 6c0 4 3 6 7 6zM12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8M9.5 9l1.7 1.7L14.8 7.3"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16V11l2-5h10l2 5v5M3 11h18v6H3zM6 17v2M18 17v2"/><circle cx="7" cy="14" r="1"/><circle cx="17" cy="14" r="1"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-back" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="8" r="4"/><path d="M20 13c-3 4-3 9-1 14l-4 15M19 27l7 6 2 9M20 16l7 5"/><path d="M30 22c3 1 5 3 5 6" stroke-dasharray="2 3"/><path d="m33 18 4-3M35 23h4M33 28l4 3" stroke="#EE8A2E"/></symbol>
+  <symbol id="i-shoulder" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="13" r="6"/><path d="M10 42c0-9 6-15 14-15s14 6 14 15M19 18v4M29 18v4"/><path d="m34 22 4-4M36 27h5" stroke="#EE8A2E"/></symbol>
+  <symbol id="i-knee" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4c0 8 2 14 6 18-3 5-5 12-5 22M28 4c0 7-1 12 2 17 3 5 1 13 0 23"/><circle cx="26" cy="22" r="3" stroke="#EE8A2E"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 40v-6c-4-3-6-7-6-12C8 13 15 6 24 6s16 6 16 15c0 2-1 4 1 6l-3 1v5c0 2-2 3-4 3h-4v4"/><path d="M20 18c0-3 3-4 5-3 2-2 6 0 5 3 2 1 2 4 0 5-1 2-4 2-5 1-2 1-5 0-5-2-2-1-2-3 0-4z" stroke="#EE8A2E"/></symbol>
+  <symbol id="i-posture" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="7" r="4"/><path d="M24 12v14M24 26l-5 16M24 26l5 16M17 17h14"/><path d="M33 6v36" stroke="#EE8A2E" stroke-dasharray="3 3"/></symbol>
+  <symbol id="i-run" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="30" cy="8" r="4"/><path d="m14 20 8-5 7 3-4 10 7 5-3 9M25 28l-6 4-7-2M29 18l5 5 6-1"/></symbol>
+  <symbol id="i-crash" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 32v-8l4-9h18l4 9v8zM6 24h32M12 32v4M30 32v4"/><circle cx="13" cy="28" r="1.5"/><circle cx="29" cy="28" r="1.5"/><path d="m40 10 3-3M42 16h4M38 6V2"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8.5 10h7M8.5 13.5h7M8.5 17h4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+  <symbol id="i-hands" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21v-5l-3-4V6.5a1.5 1.5 0 0 1 3 0V11M17 21v-5l3-4V6.5a1.5 1.5 0 0 0-3 0V11M7 11l3 3M17 11l-3 3"/><path d="M12 4v4M10 6h4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6.5-8 11-8 11z"/><path d="m9 11 2 2 4-4"/></symbol>
+  <symbol id="i-desk" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="10" r="4"/><path d="M17 15c-2 4-2 9 0 13h10l2 12M14 22l9-1M10 40V28M6 28h16M30 20h12M36 20v20"/></symbol>
+  <symbol id="i-muscle" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 6c-1 8 1 14 1 20s-2 10-2 16h18c0-6-2-10-2-16s2-12 1-20"/><path d="M24 14v20" /><path d="M20 22c1 2 7 2 8 0M20 28c1 2 7 2 8 0" stroke="#EE8A2E"/></symbol>
+  <symbol id="i-box" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="9" r="4"/><path d="M14 14c4 3 8 7 10 12M24 26l-2 16M16 24l-4 18"/><rect x="26" y="28" width="14" height="12" rx="1" stroke="#EE8A2E"/><path d="m20 20 7 8"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<div class="preview-bar">デザイン案A「ナチュラル」— 確認用のテストページです</div>
+<header>
+  <a class="logo" href="#"><img src="../img/logo.png" alt="松岡整骨院"></a>
+  <nav><a href="#">初めての方へ</a><a href="#">症状別メニュー</a><a href="#">交通事故</a><a href="#">料金</a><a href="#">院長紹介</a><a href="#">アクセス</a></nav>
+  <a class="tel" href="tel:0975112938">097-511-2938</a>
+</header>
+<div class="side">
+  <a class="l" href="https://lin.ee/NLC7Jig" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで予約</a>
+  <a class="w" href="https://ssv.onemorehand.jp/reserve/" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg>WEB予約</a>
+</div>
+
+<section class="hero">
+  <div class="ph"><img src="../img/explain.jpg" alt="骨格模型で体の状態を説明する院長"></div>
+  <div class="copy">
+    <div class="dots"><i></i><i></i><i></i></div>
+    <h1>話を聞いて、説明して、<br><b>納得してから</b>施術します。</h1>
+    <p class="sub">大分市松岡で12年。松岡整骨院</p>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <ul class="points">
+    <li><b>12<small>年</small></b>地域で開院</li>
+    <li><b>国家資格</b>柔道整復師</li>
+    <li><b>P</b>駐車場あり</li>
+    <li><b>当日</b>保険施術は<br>当日予約OK</li>
+  </ul>
+</section>
+
+<section class="sec wrap">
+  <div class="ttl"><h2>ご挨拶</h2><span>greeting</span></div>
+  <div class="greet">
+    <div>
+      <p>はじめまして。松岡整骨院 院長の首藤です。</p>
+      <p>体の状態やお悩みは人それぞれ。だからこそ、しっかりとお話を伺い、その方にとって今本当に必要なケアを心がけています。</p>
+      <p>不安やつらさを抱えて来院された方が「ここに来てよかった」と思えるように。これからも寄り添う気持ちを忘れず、一人ひとりの健康をサポートしてまいります。</p>
+      <p class="name">院長<b>首藤 晃伯</b></p>
+      <a class="more" href="#">院長紹介</a>
+    </div>
+    <img src="../img/staff.jpg" alt="首藤院長">
+  </div>
+</section>
+
+<section class="sec wrap">
+  <div class="ttl"><h2>お悩みから探す</h2><span>symptoms</span></div>
+  <div class="nayami">
+    <a href="../youtsu.html"><svg><use href="#i-back"/></svg>腰痛<span>LOW BACK</span></a>
+    <a href="#"><svg><use href="#i-shoulder"/></svg>首・肩こり<span>NECK</span></a>
+    <a href="#"><svg><use href="#i-knee"/></svg>膝の痛み<span>KNEE</span></a>
+    <a href="#"><svg><use href="#i-brain"/></svg>自律神経<span>NERVE</span></a>
+    <a href="#"><svg><use href="#i-posture"/></svg>猫背矯正<span>POSTURE</span></a>
+    <a href="#"><svg><use href="#i-run"/></svg>スポーツのケガ<span>SPORTS</span></a>
+    <a href="../jiko.html"><svg><use href="#i-crash"/></svg>交通事故<span>ACCIDENT</span></a>
+    <a href="#"><svg><use href="#i-hands"/></svg>その他の症状<span>OTHERS</span></a>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <div class="ttl"><h2>当院の特徴</h2><span>features</span></div>
+  <div class="feat">
+    <div class="f"><div class="fi"><img src="../img/reason1.jpg" alt=""></div><div class="ft"><span class="no">POINT 01</span><h3>まず、しっかり話を聞きます</h3><p>日常のお困りごとまで丁寧に伺い、徒手検査で不調の原因がどこから来ているのかを調べます。</p></div></div>
+    <div class="f"><div class="fi"><img src="../img/sejutsu.jpg" alt=""></div><div class="ft"><span class="no">POINT 02</span><h3>強い刺激をしない、やさしい施術</h3><p>過度な力や無理な手技は行いません。内容と料金にご納得いただいてから始め、通院を強要することもありません。</p></div></div>
+    <div class="f"><div class="fi"><img src="../img/reason4.jpg" alt=""></div><div class="ft"><span class="no">POINT 03</span><h3>アスリートも使う機器を導入</h3><p>微弱電流「ソーマダイン」2台と、遠赤外線振動療法「FIRV」。電気が苦手な方でも、体に負担なく受けていただけます。</p></div></div>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <div class="jiko">
+    <div>
+      <div class="ttl" style="text-align:left;margin-bottom:20px"><span>traffic accident</span><h2>交通事故に遭われた方へ</h2></div>
+      <p class="big">0<small>円</small></p>
+      <p>自賠責保険の対象となる施術は、窓口でのご負担が原則ありません。</p>
+      <ul><li>病院との併院OK</li><li>保険施術は当日予約OK</li><li>保険会社とのやりとりもご相談ください</li></ul>
+      <a class="more" href="../jiko.html">交通事故施術について</a>
+    </div>
+    <img src="../img/monshin.jpg" alt="">
+  </div>
+</section>
+
+<section class="sec wrap">
+  <div class="ttl"><h2>患者様の声</h2><span>voice</span></div>
+  <div class="voices">
+    <article class="v"><span class="tag">腰痛 ／ 50代女性</span><h3>その日ごとの体調に合わせた丁寧な施術</h3><p>悪いところを的確に指摘されるのは驚きます。まじめで丁寧な先生の施術が大好きです。</p></article>
+    <article class="v"><span class="tag">腰痛 ／ 30代男性</span><h3>丁寧な説明で、安心して通えました</h3><p>しっかりと問診や検査をして、腰の状態を分かりやすく説明してくださいました。</p></article>
+    <article class="v"><span class="tag">交通事故 ／ 女性</span><h3>子連れでも通いやすかったです</h3><p>産まれて1ヶ月の子供を連れて通いましたが、ベッドに寝かせて気にかけてくれました。</p></article>
+  </div>
+  <p class="note">※患者様個人の感想であり、効果を保証するものではありません。</p>
+</section>
+
+<section class="sec wrap">
+  <div class="ttl"><h2>施術の流れ</h2><span>flow</span></div>
+  <ol class="flow">
+    <li>ご予約<small>LINE・電話・WEB</small></li>
+    <li>問診票<small>症状をご記入</small></li>
+    <li>問診<small>じっくり伺います</small></li>
+    <li>検査<small>原因を調べます</small></li>
+    <li>施術<small>やさしく丁寧に</small></li>
+    <li>アドバイス<small>セルフケアも</small></li>
+  </ol>
+  <div class="price">
+    <div><h3>保険施術</h3><p class="note" style="margin:0 0 12px">自己負担は保険の負担割合により異なります</p><dl><dt>ライトケアコース</dt><dd>700<small>円</small></dd><dt>早期回復コース</dt><dd>1,700<small>円</small></dd><dt>全身調整コース</dt><dd>3,300<small>円</small></dd></dl></div>
+    <div><h3>自費施術</h3><dl><dt>整体</dt><dd>5,500<small>円</small></dd><dt>猫背矯正</dt><dd>2,500<small>円〜</small></dd><dt>エステ／ヘッドセラピー</dt><dd>4,400<small>円</small></dd><dt>初診料</dt><dd>2,500<small>円</small></dd></dl></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="tiles">
+    <a href="#"><img src="../img/g4.jpg" alt="">よくあるご質問</a>
+    <a href="#"><img src="../img/kensa.jpg" alt="">初めての方へ</a>
+    <a href="#"><img src="../img/g6.jpg" alt="">アクセス</a>
+    <a href="#"><img src="../img/g2.jpg" alt="">ブログ</a>
+  </div>
+</section>
+
+<footer>
+  <img src="../img/logo.png" alt="松岡整骨院" style="height:44px;border-radius:6px">
+  <p>〒870-0125 大分県大分市松岡5041-1（松岡小学校の向かい）駐車場あり</p>
+  <a class="tel" href="tel:0975112938">097-511-2938</a>
+  <div style="overflow-x:auto;max-width:100%">
+  <table><tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日祝</th></tr>
+  <tr><td>8:30-12:00</td><td class="o">○</td><td class="o">○</td><td class="h">△</td><td class="o">○</td><td class="o">○</td><td class="h">△</td><td class="x">／</td></tr>
+  <tr><td>15:00-19:00</td><td class="o">○</td><td class="o">○</td><td class="x">／</td><td class="o">○</td><td class="o">○</td><td class="x">／</td><td class="x">／</td></tr></table>
+  </div>
+  <p class="note" style="margin:0">△は12:30まで ／ 予約優先制</p>
+  <div class="cta">
+    <a class="btn l" href="https://lin.ee/NLC7Jig" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで予約</a>
+    <a class="btn w" href="https://ssv.onemorehand.jp/reserve/" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg>WEB予約</a>
+  </div>
+</footer>
+<nav class="sp-bar"><a class="l" href="https://lin.ee/NLC7Jig"><svg><use href="#i-line"/></svg>LINEで予約</a><a class="t" href="tel:0975112938"><svg><use href="#i-tel"/></svg>電話する</a><a class="w" href="https://ssv.onemorehand.jp/reserve/"><svg><use href="#i-cal"/></svg>WEB予約</a></nav>
+</body>
+</html>
