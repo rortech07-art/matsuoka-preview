@@ -274,6 +274,13 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 .bigcta p{color:#DDF2E6}
 .bigcta .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .bigcta .btn.ghost{border-color:#fff}
+.art h2 .sn{display:inline-grid;place-content:center;width:34px;height:34px;border-radius:50%;background:var(--green-d);color:#fff;font-family:var(--num);font-size:18px;margin-right:10px;vertical-align:2px}
+.pr-box{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pr-box>div{background:#fff;border-radius:18px;padding:20px 22px;border:1px solid var(--line)}
+.pr-box>div:first-child{background:var(--coral-l);border:2px solid var(--coral)}
+.pr-box .lb{font-weight:700}
+.pr-box .pr{font-family:var(--num);font-size:42px;font-weight:600;color:var(--coral-d);line-height:1.2}
+.pr-box .pr small{font-family:var(--jp);font-size:14px}
 .rel{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .rel a{display:flex;align-items:center;gap:10px;background:#fff;border-radius:14px;border:1px solid var(--line);padding:12px 14px;text-decoration:none;font-weight:700}
 .rel a svg{width:26px;height:26px;color:var(--green-d)}
@@ -291,6 +298,7 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
  .bigcta{padding:32px 18px;border-radius:22px}
  .bigcta h2{font-size:21px}
  .rel{grid-template-columns:1fr 1fr}
+ .pr-box{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -354,12 +362,12 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 </section>
 
 <div class="wrap narrow">
- <nav class="toc rv" aria-label="このページの目次"><b>このページの内容</b><ol><li><a href="#s1">こんな症状はありませんか</a></li><li><a href="#s2">乱れやすい理由</a></li><li><a href="#s3">当院の施術</a></li><li><a href="#s4">毎日できること</a></li><li><a href="#s5">ご予約・ご相談</a></li></ol></nav>
+ <nav class="toc rv" aria-label="このページの目次"><b>このページの内容</b><ol><li><a href="#s1">こんなお悩みの方へ</a></li><li><a href="#s2">日常生活で考えられる関連要因</a></li><li><a href="#s3">当院で確認する身体の状態</a></li><li><a href="#s4">施術の考え方</a></li><li><a href="#s5">自宅でできるセルフケア</a></li><li><a href="#s6">料金・予約方法</a></li></ol></nav>
 </div>
 
 <div class="art">
 <section class="sec" id="s1"><div class="wrap narrow">
- <h2 class="rv">このような症状でお困りではありませんか？</h2>
+ <h2 class="rv"><span class="sn">1</span>こんなお悩みの方へ</h2>
  <div class="box rv"><ul class="check">
   <li>寝付きが悪い、夜中に何度も目が覚める</li>
   <li>いつも体が緊張している感じで、リラックスできない</li>
@@ -368,37 +376,44 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
   <li>立ちくらみや、急なドキドキ感・息苦しさを感じることがある</li>
   <li>疲れやすく、気分が塞ぎ込みがちになる</li>
  </ul>
- <p style="margin-top:12px">当てはまる方は、一人で抱えずにご相談ください。不調のもとを見極め、一人ひとりの状態に合わせた施術で、つらさを和らげ、毎日の生活に戻れるようサポートします。</p></div>
+ <p style="margin-top:12px">「しっかり休んだはずなのに疲れが取れない」「検査では異常がないのに、体調がすぐれない」。そんな、はっきりしない不調のご相談も承っています。</p></div>
 </div></section>
 
 <section class="sec cream" id="s2"><div class="wrap narrow">
- <h2 class="rv">自律神経のバランスが乱れやすい理由</h2>
- <p class="rv">自律神経は、自分の意思とは関係なく呼吸・血流・消化などを調整している大切な仕組みです。活発に動くための「交感神経」と、リラックスするための「副交感神経」が交互に働くことで、体の調子が保たれています。</p>
+ <h2 class="rv"><span class="sn">2</span>日常生活で考えられる関連要因</h2>
+ <p class="rv">自律神経は、呼吸・血流・消化などを自分の意思とは関係なく調整している仕組みです。活発に動くための「交感神経」と、リラックスするための「副交感神経」が交互に働くことで、体の調子が保たれています。毎日の暮らしの中には、このバランスを崩しやすいきっかけがあります。</p>
  <ul class="causes" style="margin-top:24px">
-  <li class="rv"><b>ストレスと緊張が続く</b><p>仕事や人間関係のストレスが続くと交感神経が働きっぱなしになり、体が休まらなくなります。</p></li>
-  <li class="rv" data-d="80"><b>スマホ・パソコンの使いすぎ</b><p>画面の強い光や、猫背による首への負担が、バランスを乱す大きなきっかけになります。</p></li>
-  <li class="rv" data-d="160"><b>不規則な生活</b><p>夜更かしや食事の偏りは、体のリズムを崩します。</p></li>
-  <li class="rv" data-d="240"><b>姿勢のゆがみ</b><p>背骨や首まわりの筋肉が硬くなると、全身の不調につながることがあります。</p></li>
+  <li class="rv"><b>ストレスや緊張が続く</b><p>仕事や人間関係の緊張が続くと、体が休まりにくくなります。</p></li>
+  <li class="rv" data-d="80"><b>スマホ・パソコンの長時間の使用</b><p>画面の強い光や、うつむいた姿勢による首への負担が続きます。</p></li>
+  <li class="rv" data-d="160"><b>不規則な生活リズム</b><p>夜更かしや食事の時間のずれは、体のリズムを崩すきっかけになります。</p></li>
+  <li class="rv" data-d="240"><b>天気や気圧の変化</b><p>台風や低気圧が近づくと、頭痛やだるさを感じる方もいます。</p></li>
  </ul>
- <h3 class="rv">天気や気圧で体調が変わる方へ</h3>
- <p class="rv">台風や低気圧が近づくと、頭痛やだるさを感じる方も多いと思います。気圧の変化に体が対応しようとして、自律神経が過剰に働いてしまうためです。当院では体の緊張をやわらげ、環境の変化に負けない体づくりをサポートします。</p>
- <p class="warn rv">※当院では内科的な病気そのものの治療は行えません。強いめまいや動悸が続く場合は、まず医療機関の受診をおすすめしています。</p>
 </div></section>
 
 <section class="sec" id="s3"><div class="wrap narrow">
- <h2 class="rv">松岡整骨院の自律神経ケア</h2>
- <h3 class="rv">決まった流れではなく、その方に合わせて</h3>
- <p class="rv">不調の原因は、お仕事や生活の環境によって人それぞれです。すべての方に同じ施術をすることはありません。まずはお話を詳しく伺い、体の状態を確かめたうえで、その時のお体に合った施術をご提案します。</p>
- <h3 class="rv">体にやさしい機器も組み合わせます</h3>
- <ul class="machines">
-  <li class="rv"><img src="../img/reason4.jpg" alt="微弱電流機器ソーマダイン"><div class="t"><b>微弱電流「ソーマダイン」</b><p>ほとんど感じない程度の弱い電流なので、電気が苦手な方でも安心です。不眠やストレスからくる不調の方から「眠ってしまうほど気持ちよく、心身ともにリラックスできる」とのお声をいただいています。当院では2台導入しています。</p></div></li>
-  <li class="rv" data-d="100"><img src="../img/sejutsu.jpg" alt="施術の様子"><div class="t"><b>遠赤外線振動療法「FIRV」</b><p>遠赤外線と振動で、固くなった筋膜などをやさしくゆるめます。服の上から受けられるので、女性の方も安心です。</p></div></li>
+ <h2 class="rv"><span class="sn">3</span>当院で確認する身体の状態</h2>
+ <p class="rv">まずはお話を詳しく伺い、そのうえで次のような点を一緒に確認します。今の体の状態を、できるだけ難しい言葉を使わずにご説明します。</p>
+ <ul class="causes" style="margin-top:24px">
+  <li class="rv"><b>姿勢</b><p>猫背や首の位置など、立ち姿・座り姿のくせ。</p></li>
+  <li class="rv" data-d="80"><b>首・肩・背中のこわばり</b><p>背骨や首まわりの筋肉の硬さ、動かしたときのつっぱり。</p></li>
+  <li class="rv" data-d="160"><b>呼吸のしかた</b><p>浅く速い呼吸になっていないか。</p></li>
+  <li class="rv" data-d="240"><b>生活のリズム</b><p>睡眠の時間や質、お仕事の姿勢、スマホを見る時間など。</p></li>
  </ul>
+ <p class="warn rv">※当院では内科的な病気そのものの治療は行えません。強いめまいや動悸が続く場合は、まず医療機関の受診をおすすめしています。</p>
 </div></section>
 
 <section class="sec soft" id="s4"><div class="wrap narrow">
- <h2 class="rv">毎日の暮らしでできること</h2>
- <p class="rv" style="margin-bottom:20px">慢性的な不調から抜け出すには、毎日の習慣を見直すことも大切です。施術のときに、その方に合ったやり方をお伝えしています。</p>
+ <h2 class="rv"><span class="sn">4</span>施術の考え方</h2>
+ <p class="rv">不調の背景は、お仕事や生活の環境によって人それぞれです。すべての方に同じ施術をすることはありません。確認した体の状態をもとに、その時のお体に合った施術をご提案し、内容と料金にご納得いただいてから始めます。強い刺激や無理な手技は行いません。</p>
+ <ul class="machines">
+  <li class="rv"><img src="../img/reason4.jpg" alt="微弱電流機器ソーマダイン"><div class="t"><b>微弱電流「ソーマダイン」</b><p>ほとんど感じない程度の弱い電流なので、電気が苦手な方でも安心です。当院では2台導入しています。</p></div></li>
+  <li class="rv" data-d="100"><img src="../img/sejutsu.jpg" alt="施術の様子"><div class="t"><b>手技・遠赤外線振動療法「FIRV」</b><p>手技と、遠赤外線と振動を組み合わせた機器で、こわばった体をやさしくゆるめます。服の上から受けられます。</p></div></li>
+ </ul>
+</div></section>
+
+<section class="sec" id="s5"><div class="wrap narrow">
+ <h2 class="rv"><span class="sn">5</span>自宅でできるセルフケア</h2>
+ <p class="rv" style="margin-bottom:20px">施術のときに、その方に合ったやり方をお伝えしています。</p>
  <ul class="tips">
   <li class="rv"><b>深呼吸を習慣に</b><p>お腹をふくらませる腹式呼吸で、吐く息を長くすると、リラックスの神経が働きやすくなります。</p></li>
   <li class="rv" data-d="80"><b>首・目元を温める</b><p>蒸しタオルなどで首の後ろや目元を温めるのがおすすめです。寝る前のリラックスタイムにどうぞ。</p></li>
@@ -407,11 +422,16 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
  </ul>
 </div></section>
 
-<section class="sec" id="s5" data-place="自律神経ページ下の予約"><div class="wrap narrow">
- <div class="bigcta rv">
+<section class="sec cream" id="s6" data-place="症状ページ下の予約"><div class="wrap narrow">
+ <h2 class="rv"><span class="sn">6</span>料金・予約方法</h2>
+ <div class="pr-box rv">
+  <div><p class="lb">はじめての方専用コース</p><p class="pr">3,300<small>円（税込）</small></p><p class="note">学生（高校生まで）・各種助成・60歳以上の方は2,200円（税込）</p></div>
+  <div><p class="lb">2回目以降</p><p>症状に合わせたコースをご提案します。料金は施術の前にご説明します。</p><p class="note">慢性的な肩こり・腰痛、自律神経の不調は健康保険の対象外です。</p></div>
+ </div>
+ <div class="bigcta rv" style="margin-top:24px">
   <p class="hand" style="color:#FFE7A3;font-size:18px">「これくらいで相談していいのかな？」と迷わずに。</p>
-  <h2>自律神経の不調も、まずはご相談ください</h2>
-  <p>予約優先制です。LINEなら24時間受け付けています。</p>
+  <h2>ご予約は、ご都合のよい方法で</h2>
+  <p>予約優先制です。LINEなら24時間受け付けています。WEB予約では空き状況を見ながら選べます。</p>
   <div class="row">
    <a class="btn line" href="https://lin.ee/NLC7Jig" data-cta="line"><svg><use href="#i-line"/></svg>LINEで相談・予約</a>
    <a class="btn web" href="#" data-cta="web"><svg><use href="#i-cal"/></svg>WEBで予約</a>
@@ -427,6 +447,7 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
  </div>
 </div></section>
 </div>
+
 </main>
 
 <footer>

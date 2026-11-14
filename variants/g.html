@@ -246,10 +246,15 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 .hero .pill svg{width:18px;height:18px}
 .hero h1{font-size:clamp(28px,3vw,42px);line-height:1.5;margin:16px 0 16px;letter-spacing:.06em}
 .hero h1 .q{color:var(--green);font-weight:700}
+.hero h1 .l.sm{font-size:.62em;color:var(--ink);margin-top:6px;letter-spacing:.04em}
+.fv-sym{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.fv-sym a{display:inline-flex;align-items:center;gap:4px;background:#fff;border:1.5px solid var(--green);color:var(--green-d);border-radius:999px;padding:3px 14px;font-size:14px;font-weight:700;text-decoration:none}
+.fv-sym a::after{content:"›"}
+.fv-sym a:hover{background:var(--green-d);color:#fff}
 .hero h1 .s{display:block;font-size:.5em;color:var(--sub);font-weight:500;letter-spacing:.06em;margin-bottom:6px}
 .hero h1 .l{display:block;white-space:nowrap}
 .hero h1 em{font-style:normal;color:var(--green-d);background:linear-gradient(transparent 68%,#FFE7A3 68%)}
-.hero .lead{font-size:17px;color:var(--sub)}
+.hero .lead{font-size:16px;color:var(--sub);line-height:1.85}
 .hero .lead b{color:var(--ink)}
 .pc-br{display:inline}
 .hero .cta{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
@@ -319,7 +324,8 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 .jr .how{display:grid;gap:14px}
 .jr .how li{display:grid;grid-template-columns:120px 1fr;gap:18px;background:#fff;border-radius:20px;padding:14px;align-items:center}
 .jr .how img{border-radius:14px;aspect-ratio:1;object-fit:cover}
-.jr .how b{display:block;font-size:18px;margin-bottom:4px}
+.jr .how b{display:block;font-size:18px;line-height:1.7}
+.jr .how .no{font-family:var(--num);font-weight:600;color:var(--green);font-size:15px}
 .jr .how p{font-size:15px;color:var(--sub);line-height:1.75}
 .jr .more{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
 /* こんな思い */
@@ -335,6 +341,7 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 .dr{display:grid;grid-template-columns:400px 1fr;gap:56px;align-items:start}
 .dr .ph{position:relative}
 .dr .ph img{border-radius:24px;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.dr .ph .dr-note{position:absolute;left:-18px;bottom:104px;background:#fff;border:2px solid var(--green);border-radius:16px;padding:10px 16px;font-family:var(--hand);font-weight:600;font-size:17px;line-height:1.7;color:var(--green-d);box-shadow:0 10px 24px rgba(46,54,50,.12);transform:rotate(-2deg)}
 .dr .ph .name{position:absolute;left:20px;right:20px;bottom:-24px;background:#fff;border-radius:16px;padding:12px 18px;box-shadow:0 10px 30px rgba(46,54,50,.12)}
 .dr .ph .name small{display:block;font-size:12px;color:var(--sub)}
 .dr .ph .name b{font-size:22px;letter-spacing:.12em}
@@ -389,6 +396,7 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 .v .src{font-size:12px;color:var(--sub);display:flex;align-items:center;gap:6px}
 .v .src i{color:#F4B400;font-style:normal;letter-spacing:1px}
 .v p{font-size:16px;line-height:1.85}
+.g-link{text-align:center;margin:24px 0 6px}
 .sheets{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
 .sheets figure{margin:0;background:#fff;border-radius:16px;padding:10px;border:1px solid var(--line);transform:rotate(-1.2deg)}
 .sheets figure:nth-child(2){transform:rotate(1deg)}
@@ -492,6 +500,7 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
  .jr .how p{font-size:14px}
  .worry .ans{padding:24px 20px}
  .dr .ph{max-width:340px;margin-inline:auto}
+ .dr .ph .dr-note{left:8px;bottom:72px;font-size:15px;padding:8px 12px}
  .dr .msg{font-size:18px}
  .policy{grid-template-columns:1fr;gap:14px;margin-top:56px}
  .policy li{display:grid;grid-template-columns:110px 1fr}
@@ -572,10 +581,13 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
  <div class="wrap hero-in">
   <div class="copy">
    <span class="pill"><svg><use href="#i-brain"/></svg>自律神経ケアに力を入れています</span>
-   <h1><span class="s">大分市松岡の整骨院</span><span class="l"><span class="q">「</span>ここに来てよかった<span class="q">」</span>と</span><span class="l"><em>思っていただける場所</em>に。</span></h1>
-   <p class="lead">肩・腰・膝の痛みから、<b>なんとなく続く自律神経の不調</b>まで。<br>院長がじっくりお話を聞いて、体の状態をわかりやすく説明し、<br class="pc-br">納得していただいてから施術します。</p>
+   <h1><span class="s">大分市松岡の整骨院</span><span class="l">肩・腰・膝の痛みも、</span><span class="l"><em>眠りや疲れの不調</em>も。</span><span class="l sm">原因を確かめてから施術します。</span></h1>
+   <p class="lead">「ぎっくり腰で動けない」「肩こりが何年も続く」<br class="pc-br">「眠りが浅く、疲れが取れない」――<br class="pc-br">柔道整復師の院長がお話を伺い、体の状態を確かめて、<br class="pc-br">わかりやすくご説明してから施術します。</p>
+   <ul class="fv-sym">
+    <li><a href="../youtsu.html">腰痛・ぎっくり腰</a></li><li><a href="#symptoms">肩こり・首こり</a></li><li><a href="#symptoms">膝の痛み</a></li><li><a href="g-jiritsu.html">自律神経の不調</a></li><li><a href="../jiko.html">交通事故・むち打ち</a></li>
+   </ul>
    <ul class="trust">
-    <li>地域に根ざして<b>10年以上</b></li>
+    <li>2014年に<b>松岡で開院</b></li>
     <li>国家資格<b>柔道整復師</b></li>
     <li>予約優先制で<b>待ち時間少なめ</b></li>
     <li>松岡小の向かい<b>駐車場あり</b></li>
@@ -638,12 +650,13 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
    </div>
    <div>
     <ol class="how">
-     <li class="rv" data-d="0"><img src="../img/monshin.jpg" alt=""><div><b>① お話と検査で、原因を一緒に探します</b><p>お仕事や生活のリズム、姿勢のくせまで伺い、不調がどこから来ているのかを確かめます。</p></div></li>
-     <li class="rv" data-d="100"><img src="../img/reason4.jpg" alt=""><div><b>② 体にやさしい機器で、緊張をゆるめます</b><p>微弱電流「ソーマダイン」を2台導入。「眠ってしまうほど気持ちよく、心身ともにリラックスできる」とのお声をいただいています。</p></div></li>
-     <li class="rv" data-d="200"><img src="../img/explain.jpg" alt=""><div><b>③ 毎日の過ごし方もお伝えします</b><p>呼吸のしかた、首や目元の温め方、朝の光の浴び方など、ご自宅でできることも一緒に考えます。</p></div></li>
+     <li class="rv" data-d="0"><img src="../img/monshin.jpg" alt=""><div><span class="no">01</span><b>睡眠や疲れ、日々の体調についてもご相談いただけます。</b></div></li>
+     <li class="rv" data-d="100"><img src="../img/kensa.jpg" alt=""><div><span class="no">02</span><b>生活習慣や姿勢、身体の状態などを丁寧に確認します。</b></div></li>
+     <li class="rv" data-d="200"><img src="../img/explain.jpg" alt=""><div><span class="no">03</span><b>お一人おひとりの状態に合わせた施術とセルフケアをご提案します。</b></div></li>
     </ol>
     <div class="more rv"><a class="btn tel" href="g-jiritsu.html">自律神経ケアについて詳しく見る<span aria-hidden="true">›</span></a></div>
-    <p class="note" style="margin-top:14px">※内科的な病気そのものの治療は行えません。強いめまいや動悸が続く場合は、まず医療機関の受診をおすすめしています。</p>
+    <p class="note" style="margin-top:14px">※セルフチェックは体調を振り返るための目安です。医療的な診断ではありません。</p>
+    <p class="note" style="margin-top:6px">※内科的な病気そのものの治療は行えません。強いめまいや動悸が続く場合は、まず医療機関の受診をおすすめしています。</p>
    </div>
   </div>
  </div>
@@ -673,14 +686,17 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
  <div class="wrap">
   <div class="hd rv"><span class="kicker">院長紹介</span><h2>はじめまして、院長の首藤です</h2></div>
   <div class="dr">
-   <div class="ph rv"><img src="../img/matsuoka.jpg" alt="院の前に立つ首藤院長"><p class="name"><small>松岡整骨院 院長</small><b>首藤 晃伯</b><span>しゅとう あきのり</span></p></div>
+   <div class="ph rv"><img src="../img/matsuoka.jpg" alt="院の前に立つ首藤院長"><p class="dr-note">どんな小さなことでも、<br>まずはお気軽にご相談ください。</p><p class="name"><small>松岡整骨院 院長</small><b>首藤 晃伯</b><span>しゅとう あきのり</span></p></div>
    <div class="rv" data-d="120" style="padding-top:8px">
     <p class="msg">施術を通して、痛みや不調だけでなく、<br><em>気持ちまで少し軽くなる</em>ような時間を<br>提供できればと思っています。</p>
+    <p>私は大分県で生まれ、柔道整復師の資格取得後、熊本県で5年間、手技療法や東洋医学について学んできました。2014年に地元の大分へ戻り、松岡整骨院を開院しました。</p>
+    <p>患者さまのお話をしっかり伺い、身体の状態を一緒に確認しながら、その方に合ったケアをご提案することを大切にしています。</p>
     <p>私たちは、安心してお越しいただける空間づくりと、一人ひとりに合わせた丁寧な施術を大切にしています。</p>
     <p>体の状態やお悩みは人それぞれ。だからこそ、しっかりとお話を伺い、その方にとって今、本当に必要なケアを心がけています。不安やつらさを抱えて来院された方が「ここに来てよかった」と思えるように。これからも寄り添う気持ちを忘れず、一人ひとりの健康をサポートしてまいります。</p>
     <dl class="prof">
      <dt>資格</dt><dd>柔道整復師（国家資格）</dd>
      <dt>出身校</dt><dd>大分医学技術専門学校</dd>
+     <dt>経歴</dt><dd>熊本県で5年間、手技療法・東洋医学を学ぶ<br>2014年 松岡整骨院を開院</dd>
      <dt>趣味</dt><dd><span class="chips"><span>ドライブ</span><span>温泉</span><span>読書</span><span>音楽鑑賞</span><span>献血</span></span></dd>
     </dl>
    </div>
@@ -749,12 +765,14 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 
 <section class="sec" id="voice">
  <div class="wrap">
-  <div class="hd rv"><span class="kicker">患者様の声</span><h2>通ってくださっている方から</h2></div>
+  <div class="hd rv"><span class="kicker">患者様の声</span><h2>Googleの口コミから</h2><p>Googleに投稿された口コミのうち、星4・星5で感想が書かれているものを院で選んで載せています。すべての口コミは、Googleマップでご覧いただけます。</p></div>
   <div class="voices snap-sp bleed" data-dots>
-   <article class="v rv"><span class="src"><i>★★★★★</i>Googleの口コミより</span><p>とても親切で話しやすく、施術も満足でした！約半年間お世話になりました。</p></article>
-   <article class="v rv" data-d="100"><span class="src"><i>★★★★★</i>Googleの口コミより</span><p>産まれて1ヶ月の子供を連れて通いましたが、ベッドに寝かせて気にかけてくれたりと、とても通いやすかったです。先生の説明や施術も丁寧で、受付の方もとても感じが良く、安心して通うことができました。</p></article>
-   <article class="v rv" data-d="200"><span class="src"><i>★★★★★</i>Googleの口コミより</span><p>先生は親身になって施術してくださいました。受付の方も感じが良く、おすすめの整骨院です。</p></article>
+   <article class="v rv"><span class="src"><i aria-label="星5">★★★★★</i>Googleの口コミ</span><p>とても親切で話しやすく、施術も満足でした！約半年間お世話になりました。</p></article>
+   <article class="v rv" data-d="100"><span class="src"><i aria-label="星5">★★★★★</i>Googleの口コミ</span><p>産まれて1ヶ月の子供を連れて通いましたが、ベッドに寝かせて気にかけてくれたりと、とても通いやすかったです。先生の説明や施術も丁寧で、受付の方もとても感じが良く、安心して通うことができました。</p></article>
+   <article class="v rv" data-d="200"><span class="src"><i aria-label="星5">★★★★★</i>Googleの口コミ</span><p>先生は親身になって施術してくださいました。受付の方も感じが良く、おすすめの整骨院です。</p></article>
   </div>
+  <p class="g-link rv"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%BE%E5%B2%A1%E6%95%B4%E9%AA%A8%E9%99%A2+%E5%A4%A7%E5%88%86%E5%B8%82%E6%9D%BE%E5%B2%A15041-1" target="_blank" rel="noopener"><svg><use href="#i-star"/></svg>Googleの口コミをすべて見る<span aria-hidden="true">›</span></a></p>
+  <p class="note" style="text-align:center">（プレビューでは表示の見本です。星の数と本文は、本番で実際の口コミから選んで載せます）</p>
   <div class="sheets rv">
    <figure><img src="../img/yo1.jpg" alt="患者様の手書きアンケート"><figcaption>手書きのアンケート</figcaption></figure>
    <figure><img src="../img/yo2.jpg" alt="患者様の手書きアンケート"><figcaption>手書きのアンケート</figcaption></figure>
