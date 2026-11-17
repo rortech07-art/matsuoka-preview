@@ -244,17 +244,15 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 .veil{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--bg) 0%,var(--bg) 26%,rgba(255,252,246,.9) 40%,rgba(255,252,246,.45) 52%,rgba(255,252,246,0) 64%)}
 .dr-say{display:flex;align-items:center;gap:14px;margin-bottom:6px}
 .dr-say img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 0 0 2px var(--green),0 6px 16px rgba(26,127,79,.18);flex:none;animation:sayFace .6s cubic-bezier(.3,1.4,.5,1) .2s both}
-.dr-say .bubble{position:relative;background:#fff;border:2px solid var(--green);border-radius:18px;padding:8px 18px 10px;box-shadow:0 6px 18px rgba(26,127,79,.12);transform-origin:0 50%;animation:sayPop .5s cubic-bezier(.3,1.5,.5,1) .6s both}
-.dr-say .bubble::before,.dr-say .bubble::after{content:"";position:absolute;top:50%;border-style:solid;transform:translateY(-50%)}
-.dr-say .bubble::before{left:-12px;border-width:9px 12px 9px 0;border-color:transparent var(--green) transparent transparent}
-.dr-say .bubble::after{left:-8px;border-width:7px 9px 7px 0;border-color:transparent #fff transparent transparent}
+.dr-say .say-b{position:relative;background:#fff;border:2px solid var(--green);border-radius:18px;padding:8px 18px 10px;box-shadow:0 6px 18px rgba(26,127,79,.12);transform-origin:0 50%;animation:sayPop .5s cubic-bezier(.3,1.5,.5,1) .6s both}
+.dr-say .say-b::before{content:"";position:absolute;left:-9px;top:50%;width:16px;height:16px;margin-top:-8px;background:#fff;border-left:2px solid var(--green);border-bottom:2px solid var(--green);border-bottom-left-radius:3px;transform:rotate(45deg)}
 .dr-say small{display:block;font-family:"Klee One",serif;font-size:13px;color:var(--ink-2,#5b6660);line-height:1.4}
 .dr-say span{display:flex;align-items:center;gap:6px;font-weight:700;font-size:17px;letter-spacing:.02em;white-space:nowrap;font-family:"Noto Sans JP",sans-serif;color:var(--green-d);line-height:1.5}
 .dr-say span svg{width:20px;height:20px;flex:none}
 @keyframes sayFace{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
 @keyframes sayPop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
-@media (max-width:600px){.dr-say{gap:12px}.dr-say img{width:58px;height:58px}.dr-say .bubble{padding:6px 14px 8px}.dr-say span{font-size:14.5px;letter-spacing:0}.dr-say small{font-size:12px}}
-@media (prefers-reduced-motion:reduce){.dr-say img,.dr-say .bubble{animation:none}}
+@media (max-width:600px){.dr-say{gap:12px}.dr-say img{width:58px;height:58px}.dr-say .say-b{padding:6px 14px 8px}.dr-say span{font-size:14.5px;letter-spacing:0}.dr-say small{font-size:12px}}
+@media (prefers-reduced-motion:reduce){.dr-say img,.dr-say .say-b{animation:none}}
 .hero h1{font-size:clamp(28px,3vw,42px);line-height:1.5;margin:16px 0 16px;letter-spacing:.06em}
 .hero h1 .q{color:var(--green);font-weight:700}
 .hero h1 .l.sm{font-size:.62em;color:var(--ink);margin-top:6px;letter-spacing:.04em}
@@ -591,7 +589,7 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
    <div class="sbar" role="tablist" aria-label="写真の切り替え"></div>
  <div class="wrap hero-in">
   <div class="copy">
-   <div class="dr-say"><img src="../img/dr-face.jpg" alt="首藤院長" width="72" height="72"><div class="bubble"><small>院長の首藤より</small><span><svg><use href="#i-brain"/></svg>自律神経ケアに力を入れています</span></div></div>
+   <div class="dr-say"><img src="../img/dr-face.jpg" alt="首藤院長" width="72" height="72"><div class="say-b"><small>院長の首藤より</small><span><svg><use href="#i-brain"/></svg>自律神経ケアに力を入れています</span></div></div>
    <h1><span class="s">大分市松岡の整骨院</span><span class="l">肩・腰・膝の痛みも、</span><span class="l"><em>眠りや疲れの不調</em>も。</span><span class="l sm">原因を確かめてから施術します。</span></h1>
    <p class="lead">「ぎっくり腰で動けない」「肩こりが何年も続く」<br class="pc-br">「眠りが浅く、疲れが取れない」――<br class="pc-br">柔道整復師の院長がお話を伺い、体の状態を確かめて、<br class="pc-br">わかりやすくご説明してから施術します。</p>
    <ul class="fv-sym">
