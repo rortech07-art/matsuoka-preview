@@ -399,6 +399,17 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 .price dl{margin:0;display:grid;grid-template-columns:1fr auto;row-gap:8px;font-size:15px}
 .price dd{margin:0;font-family:var(--num);font-size:20px;font-weight:600}
 .price dd small{font-family:var(--jp);font-size:12px;font-weight:400}
+.price dt small.t{display:block;font-size:12px;color:var(--sub);line-height:1.3}
+.price dl.es{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+.price .fv-sub{display:block;font-size:13px;font-weight:500;color:#8A2E1C;margin-top:2px}
+.price .camp{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 10px;background:var(--coral-l);border:2px dashed var(--coral);border-radius:14px;padding:10px 14px;margin-bottom:14px}
+.price .camp .tag{grid-column:1/-1;justify-self:start;font-size:11px;font-weight:700;color:#fff;background:var(--coral);border-radius:999px;padding:1px 10px}
+.price .camp b{font-size:16px;color:#8A2E1C}
+.price .camp .cp{grid-row:2/4;grid-column:2;text-align:right;line-height:1.2}
+.price .camp s{display:block;font-family:var(--num);font-size:14px;color:var(--sub)}
+.price .camp em{font-style:normal;font-family:var(--num);font-size:30px;font-weight:600;color:var(--coral-d)}
+.price .camp em small{font-family:var(--jp);font-size:13px}
+.price .camp .cn{font-size:12px;color:var(--sub);white-space:nowrap}
 /* 声 */
 .voices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .v{background:#fff;border-radius:20px;padding:24px;border:1px solid var(--line);display:grid;gap:8px;align-content:start}
@@ -912,9 +923,13 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
  <div class="wrap">
   <div class="hd rv"><span class="kicker">料金</span><h2>はじめての方も、わかりやすい料金で</h2></div>
   <div class="price">
-   <div class="fv rv"><h3>はじめての方専用コース</h3><p class="pr">3,300<small>円（税込）</small></p><p style="font-size:15px;margin-top:8px">手技療法・微弱電流・振動療法・テーピングなど、症状に合わせて組み合わせます。</p><p style="font-size:15px;margin-top:10px;line-height:1.8"><b>2・3回目</b> 2,200円<br><b>学生・60歳以上・医療助成の方</b><br>初回 2,200円／2・3回目 1,700円</p><p class="note" style="margin-top:8px">症状によっては別途料金がかかる場合があります。<br>最後のご来院から1か月以上あいた場合は、このコースの対象外になります。</p></div>
+   <div class="fv rv"><h3>はじめての方専用コース<small class="fv-sub">保険施術で、当院が初めての方</small></h3><p class="pr">3,300<small>円（税込）</small></p><p style="font-size:15px;margin-top:8px">手技療法・微弱電流・振動療法・テーピングなど、症状に合わせて組み合わせます。</p><p style="font-size:15px;margin-top:10px;line-height:1.8"><b>2・3回目</b> 2,200円<br><b>学生・60歳以上・医療助成の方</b><br>初回 2,200円／2・3回目 1,700円</p><p class="note" style="margin-top:8px">症状によっては別途料金がかかる場合があります。<br>最後のご来院から1か月以上あいた場合は、このコースの対象外になります。</p></div>
    <div class="rv" data-d="100"><h3>保険施術</h3><dl><dt>初回</dt><dd>1,500〜4,500<small>円程度</small></dd><dt>2回目以降</dt><dd>1,000〜3,500<small>円程度</small></dd></dl><p class="note" style="margin-top:12px">対象：ぎっくり腰・寝違え・捻挫・打撲・肉離れなどの急な痛みやケガ、スポーツや日常生活でのケガ、仕事中・通勤中のケガ（労災）。<br>料金は保険の種類や負担割合によって変わります。慢性的な肩こり・腰痛は保険の対象外です。</p></div>
-   <div class="rv" data-d="200"><h3>自費施術</h3><dl><dt>整体</dt><dd>5,500<small>円</small></dd><dt>猫背矯正</dt><dd>2,500<small>円〜</small></dd><dt>エステ／ヘッドセラピー</dt><dd>4,400<small>円</small></dd><dt>初診料</dt><dd>2,500<small>円</small></dd></dl></div>
+   <div class="rv" data-d="200"><h3>整体・エステ（自費）</h3>
+    <p class="camp"><span class="tag">キャンペーン中</span><b>整体の初回が半額</b><span class="cp"><s>8,000円</s><em>4,000<small>円</small></em></span><small class="cn">初診料込み・1日1名様限定</small></p>
+    <dl><dt>整体 症状改善コース<small class="t">40分</small></dt><dd>5,500<small>円</small></dd><dt>整体 体質改善コース<small class="t">60分</small></dt><dd>7,700<small>円</small></dd><dt>初診料<small class="t">整体の初回</small></dt><dd>2,500<small>円</small></dd></dl>
+    <dl class="es"><dt>エステ<small class="t">60分</small></dt><dd>4,400<small>円</small></dd><dt>ヘッドセラピー<small class="t">60分</small></dt><dd>4,400<small>円</small></dd><dt>院長が担当</dt><dd>＋2,000<small>円</small></dd><dt>6回券<small class="t">エステ・ヘッドセラピー</small></dt><dd>22,000<small>円</small></dd></dl>
+    <p class="note" style="margin-top:10px">エステ・ヘッドセラピーは女性スタッフが担当します（ご希望があれば予約時にお書きください）。</p></div>
   </div>
  </div>
 </section>
