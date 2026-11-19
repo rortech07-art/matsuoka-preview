@@ -1,0 +1,68 @@
+/* WordPress 用（下層ページ・ブログ）。style.css は案Gから自動で作るので、手で直す CSS はこちらに書く */
+.skip{position:absolute;left:8px;top:-60px;z-index:500;background:#fff;padding:8px 14px;border-radius:8px;font-weight:700}
+.skip:focus{top:8px}
+.page-head{background:var(--soft);padding:20px 0 44px}
+.page-head h1{font-size:clamp(26px,3vw,36px);margin-top:10px;letter-spacing:.04em}
+.page-head p{color:var(--sub);margin-top:10px;max-width:760px}
+.page-body{padding-bottom:0}
+/* 本文（ブログ・症状ページ・管理画面で書いた文章） */
+.entry-content{font-size:17px;line-height:2}
+.entry-content>*+*{margin-top:1.2em}
+.entry-content h2{font-size:clamp(22px,2.6vw,27px);padding:10px 0 10px 16px;border-left:5px solid var(--green);margin-top:2.4em;line-height:1.5}
+.entry-content h3{font-size:20px;color:var(--green-d);margin-top:2em;padding-bottom:6px;border-bottom:2px dotted var(--green-l)}
+.entry-content h4{font-size:18px;margin-top:1.6em}
+.entry-content a{color:var(--green-d);text-decoration:underline;text-underline-offset:3px}
+.entry-content ul,.entry-content ol{padding-left:1.4em;list-style:revert}
+.entry-content li+li{margin-top:.3em}
+.entry-content img{border-radius:16px;height:auto}
+.entry-content figure{margin-inline:0}
+.entry-content figcaption{font-size:13px;color:var(--sub);text-align:center;margin-top:6px}
+.entry-content blockquote{margin-inline:0;background:var(--cream);border-radius:16px;padding:18px 22px;border-left:4px solid var(--green)}
+.entry-content table{border-collapse:collapse;width:100%;font-size:15px}
+.entry-content th,.entry-content td{border:1px solid var(--line);padding:10px;text-align:left}
+.entry-content th{background:var(--soft)}
+.entry-content .wp-block-button__link{background:var(--green-d);color:#fff;border-radius:14px;text-decoration:none;font-weight:700;padding:12px 22px}
+.entry-content mark{background:linear-gradient(transparent 60%,#FFE7A3 60%);color:inherit}
+/* ブログ一覧 */
+.cats{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:32px}
+.cats a{border:2px solid var(--line);border-radius:999px;padding:4px 16px;font-size:14px;font-weight:700;text-decoration:none;background:#fff}
+.cats a[aria-current]{background:var(--green-d);border-color:var(--green-d);color:#fff}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.post-card a{display:grid;gap:8px;text-decoration:none;background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line);height:100%;transition:transform .2s,box-shadow .2s}
+.post-card a:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(46,54,50,.1)}
+.post-card .thumb{aspect-ratio:16/10;overflow:hidden;display:block;background:var(--cream)}
+.post-card .thumb img{width:100%;height:100%;object-fit:cover}
+.post-card .meta{display:flex;gap:10px;align-items:center;padding:4px 18px 0;font-size:13px;color:var(--sub)}
+.post-card .meta time{font-family:var(--num)}
+.post-card .cat,.post-head .cat{background:var(--green-l);color:var(--green-d);border-radius:999px;padding:0 10px;font-size:12px;font-weight:700;text-decoration:none}
+.post-card .ttl{padding:0 18px 20px;font-weight:700;line-height:1.6}
+.pager{margin-top:36px}
+.pager .nav-links{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.pager .page-numbers{min-width:44px;height:44px;display:grid;place-content:center;border-radius:12px;background:#fff;border:1px solid var(--line);text-decoration:none;font-weight:700;padding:0 12px}
+.pager .page-numbers.current{background:var(--green-d);color:#fff;border-color:var(--green-d)}
+/* ブログ記事 */
+.post-head{background:var(--soft);padding:20px 0 36px;margin-bottom:32px}
+.post-head .meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--sub);margin-top:12px}
+.post-head h1{font-size:clamp(25px,3vw,34px);margin-top:10px;line-height:1.5}
+.post-head .by{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:14px;color:var(--sub)}
+.post-head .by img{border-radius:50%;object-fit:cover;width:44px;height:44px}
+.post-eye{margin:0 0 32px}
+.post-eye img{border-radius:20px;width:100%;height:auto}
+.post-cta{margin-top:56px;background:var(--green-d);color:#fff;border-radius:24px;padding:28px;text-align:center;display:grid;gap:14px;justify-items:center}
+.post-cta .hand{font-size:19px;color:#FFE7A3}
+.post-cta .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.post-cta .btn.ghost{border-color:#fff}
+.post-nav{display:flex;justify-content:space-between;gap:16px;margin:40px 0 96px;font-size:14px}
+.post-nav a{color:var(--green-d)}
+.post-nav .next{margin-left:auto;text-align:right}
+.rel-h{font-size:22px;margin-bottom:16px}
+@media (max-width:900px){
+ .page-head{padding:12px 0 32px}
+ .entry-content{font-size:16px}
+ .posts{grid-template-columns:1fr;gap:14px}
+ .post-card a{grid-template-columns:120px 1fr;grid-template-rows:auto 1fr;gap:4px 12px;padding:10px}
+ .post-card .thumb{grid-row:span 2;border-radius:12px;aspect-ratio:1}
+ .post-card .meta{padding:0;font-size:12px}
+ .post-card .ttl{padding:0;font-size:15px}
+ .post-cta{padding:22px 16px}
+}
