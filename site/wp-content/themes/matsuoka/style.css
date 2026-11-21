@@ -796,3 +796,38 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 .price ul.course .cp em{font-style:normal;font-family:var(--num);font-size:19px;font-weight:600;color:var(--ink)}
 .price ul.course small{grid-column:1/-1;font-size:12.5px;color:var(--sub);line-height:1.65}
 .price .camp .cn{white-space:normal;line-height:1.5}
+
+/* 交通事故ページ：事故後の手順・当院での対応・途中の相談ボタン・院の情報 */
+.sx-steps{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px}
+.sx-steps li{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.sx-steps .n{flex:none;display:grid;place-content:center;width:38px;height:38px;border-radius:50%;background:var(--green-d);color:#fff;font-family:var(--num);font-size:19px;font-weight:700}
+.sx-steps b{display:block;font-size:17px;margin-bottom:4px}
+.sx-steps p{font-size:15px;line-height:1.85;color:var(--sub)}
+.sx-support{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sx-support li{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 20px}
+.sx-support li:last-child:nth-child(odd){grid-column:1/-1}
+.sx-support b{display:block;color:var(--green-d);font-size:16px;margin-bottom:4px}
+.sx-support p{font-size:14px;line-height:1.8;color:var(--sub)}
+.sx-fee-x{margin:6px 0 0;padding-left:1.3em}
+.sx-fee-x li{margin:2px 0}
+.midcta{margin-top:24px;background:var(--green-d);color:#fff;border-radius:22px;padding:22px;text-align:center;display:grid;gap:12px;justify-items:center}
+.midcta p{color:#fff;font-weight:700}
+.midcta .sm{font-size:13px;font-weight:400;color:#DDF2E6}
+.midcta .sm a{color:#fff;text-decoration:underline}
+.midcta .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.sx-info dl{margin:0;display:grid;grid-template-columns:auto 1fr;background:#fff;border:1px solid var(--line);border-radius:18px;padding:6px 20px;font-size:15px;line-height:1.85}
+.sx-info dt,.sx-info dd{margin:0;padding:12px 4px;border-bottom:1px solid var(--line)}
+.sx-info dt:last-of-type,.sx-info dd:last-of-type{border-bottom:0}
+.sx-info dt{font-weight:700;color:var(--green-d);padding-right:20px;white-space:nowrap}
+.sx-info a{color:var(--green-d);font-weight:700}
+@media (max-width:700px){
+ .sx-support{grid-template-columns:1fr}
+ .sx-steps li{padding:16px}
+ .midcta{padding:20px 14px}
+ .midcta .row{display:grid;width:100%}
+ .midcta .btn{justify-content:center}
+ .sx-info dl{grid-template-columns:1fr;padding:4px 16px}
+ .sx-info dt{border-bottom:0;padding-bottom:0}
+}
+.midcta .btn.tel{background:#fff;color:var(--green-d)}
+.midcta .btn.tel svg{fill:currentColor;color:var(--green-d)}
