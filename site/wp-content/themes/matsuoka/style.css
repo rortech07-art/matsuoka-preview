@@ -831,3 +831,10 @@ body:not(.scrolled) .dock{transform:translate(-50%,160%);opacity:0}
 }
 .midcta .btn.tel{background:#fff;color:var(--green-d)}
 .midcta .btn.tel svg{fill:currentColor;color:var(--green-d)}
+
+/* 上部メニュー：11項目が1行に収まるように */
+.gnav ul{max-width:1240px}
+.gnav a{padding:14px 13px}
+.gnav a::after{left:13px;right:13px}
+@media (max-width:1180px){.gnav a{padding:14px 8px;font-size:14px}.gnav a::after{left:8px;right:8px}}
+@media (max-width:980px){.gnav a{padding:14px 6px;font-size:13px}.gnav a::after{left:6px;right:6px}}
